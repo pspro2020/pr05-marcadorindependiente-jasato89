@@ -7,11 +7,11 @@ public class Dice implements Runnable {
     public static volatile int[] diceRolls = new int[6];
     public static int totalThrows;
     protected final int numThrows = 100000;
-    Random random = new Random();
-    private Object[] bloqueador = new Object[6];
     private final Object bloqueadorTotalThrows = new Object();
+    Random random = new Random();
+    private final Object[] bloqueador = new Object[6];
 
-    public Dice () {
+    public Dice() {
         for (int i = 0; i < bloqueador.length; i++) {
             bloqueador[i] = new Object();
         }
@@ -62,7 +62,7 @@ public class Dice implements Runnable {
                 totalThrows++;
             }
 
- 
+
         }
     }
 

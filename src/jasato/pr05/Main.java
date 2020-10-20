@@ -1,7 +1,5 @@
 package jasato.pr05;
 
-import java.util.ArrayList;
-
 public class Main {
     public static void main(String[] args) throws InterruptedException {
 
@@ -23,6 +21,7 @@ public class Main {
 
         int num = 1;
         int sum = 0;
+
 
         StringBuilder totalRolls = new StringBuilder("Total de veces: ");
 
